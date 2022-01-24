@@ -1,0 +1,323 @@
+
+body, base{
+    margin: 0;
+    padding: 0;
+    background-color: tomato;
+    font-family: tahoma;
+    font-size: larger;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    height: 110px;
+    width: 100%;
+
+    background-color: #030045;
+    background-repeat: repeat;
+    text-align: center;
+
+    transition: top 0.3s;/*effect when sliding up and down*/
+}
+
+#header img{
+    width: 500px;
+}
+
+#links{
+    background-color: #030045;
+    position: fixed;
+    z-index: 500;
+    top: 110px;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    padding-top: 3px;
+
+    transition: 0.3s;
+}
+
+#links a{
+    text-decoration: none;
+    color: #a5c6fc;
+    padding: 0px 25px 0 25px;
+
+    border-bottom: 2px solid #a5c6fc;
+}
+
+/*change border on hover*/
+#links a:hover{
+    transition-duration: 500ms;
+    border-bottom: 1px dashed #a5c6fc;
+}
+
+/*active class indicates current page*/
+#links a.active{
+    border-bottom: 2px solid white;
+}
+
+#main{
+    margin-top: 105px;
+}
+
+#main #home-item{
+    padding-top: 20px;
+}
+
+#main #home-item img{
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 4px double white;
+}
+
+#main #home-item p{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #b22222;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border: 4px double white;
+}
+
+#main #home-item .coming-soon{
+    width: 14%;
+    display: inline-block;
+}
+
+/* ### FOOTER ### */
+
+#footer{
+    background-color: #030045;
+    color: #a5c6fc;
+    margin: 0;
+    font-size: medium;
+    line-height: 18px;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #a5c6fc;
+}
+
+#footer p{
+    margin: 0;
+}
+
+#footer table{
+    text-align: left;
+    width: 30%;
+    display:inline-flex;
+    margin: 5px 0 10px 20px;
+}
+
+/* ### PROMOTIONS PAGE ### */
+#promo{
+    padding: 30px 0 10px 0;
+}
+
+#promo h2{
+    text-align: center;
+    font-family: tahoma;/*helvetica;*/
+    font-weight: 400;
+    font-size: 40px;
+
+    background-color: #030045;
+    color:lightblue;
+    padding: 5px;
+    border-top: 2px solid lightblue;
+    border-bottom: 2px solid lightblue;
+}
+
+#promo img{
+    width: 100%;
+}
+
+/* ### STORES AND MOVIES ### */
+
+#list{
+    padding-top: 50px;
+    font-family: tahoma;
+}
+
+a.item{
+    /* background-color: #030045; */
+    background: firebrick;
+    color: lightsalmon;
+    padding: 5px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 2%;
+}
+
+a.item:hover{
+    transition: 1s;
+    color: whitesmoke;
+}
+
+.item .image{
+    /* width: 20%; */
+    width: 255px;
+    display: inline-block;
+}
+
+.item .storetext{
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    padding-left: 5%;
+    margin: 0;
+    text-transform: capitalize;
+    /* font-size: small; */
+}
+
+.item img{
+    width: 100%;
+    padding: 10px;
+}
+
+.item p.right{
+    text-align: right;
+}
+
+/*### INDIVIDUAL STORES AND MOVIES ###*/
+
+#main #info-box{
+    margin-top: 160px;
+    margin-bottom: 20px;
+}
+
+#info-box{
+    width: 90%;
+    margin: auto;
+    border: 2px solid white;
+    background-color: firebrick;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: tahoma;
+}
+
+#info-box .column{
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+}
+
+#info-box div.column.map{
+    width: 20%;
+    vertical-align: top;
+}
+
+#info-box div.column.map p{
+    text-align: left;
+    margin-left: 70px;
+    font-size: small;
+}
+
+#info-box h1, #info-box h2{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-top: 2px dashed white;
+    border-bottom: 2px dashed white;
+    border-bottom-left-radius: 20px ;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#info-box ul{
+    margin: auto;
+    height: 110px;
+    width: 80%;
+    overflow-x: auto;
+    border: 2px solid white;
+    margin-bottom: 35px;
+}
+
+#info-box ul li{
+    text-align: left;
+    text-transform: capitalize;
+}
+
+#info-box #left-list, #info-box #right-list{
+    width: 50%;
+    float: left;
+}
+
+#info-box img{
+    width: 100%;
+}
+
+#info-box .column img#card{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+#list .item .storetext table td{
+    padding: 3px 10px;
+}
+
+#info-box img.poster {
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+#info-box p{
+    padding-bottom: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+#info-box .column #contact-box{
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 2px solid white;
+}
+
+#info-box .column #contact-form input{
+    width: 80%;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+    font-family: tahoma;
+    border: 2px solid #b22222;
+    border-bottom-left-radius: 20px ;
+    border-top-right-radius: 20px;
+}
+
+#info-box .column #contact-form textarea{
+    width: 90%;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #b22222;
+    border-bottom-left-radius: 20px ;
+    border-top-right-radius: 20px;
+}
+
+#info-box .column #contact-form .button{
+    background-color: white;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#info-box .column #contact-form .button:hover{
+    background-color: rgba(255, 99, 71, 0.9);
+}
